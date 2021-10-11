@@ -1,9 +1,9 @@
-let number = 8;
+{let lol = 8;
 
 let canvas = "";
 
-for (let y = 0; y < number; y++) {
-  for (let x = 0; x < number; x++) {
+for (let y = 0; y < lol; y++) {
+  for (let x = 0; x < lol; x++) {
     if ((x + y) % 2 == 0) {
       canvas += " ";
     } else {
@@ -14,3 +14,4 @@ for (let y = 0; y < number; y++) {
 }
 
 console.log(canvas);
+}
