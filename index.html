@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JJ's TE6 Part 2</title>
+    <script src="part1_1.js"></script>
+    <script src="part1_2.js"></script>
+    <script src="part1_3.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <h1>JJ's TE6 Part 2</h1>
+    <p>
+      Clicking button below will show you what I have done in part 1.
+    </p>
+    <button onclick="myFunction1()">Looping Triangle</button>
+    <button onclick="myFunction2()">FizzBuzz</button>
+    <button onclick="myFunction3()">Chessboard</button>
+
+    <script>
+      function myFunction1(){
+    $(document).ready(function() {
+        jQuery.get('part1_1.js', function(theText) {
+            alert(theText);
+        });
+    });
+  }
+
+  function myFunction2(){
+$(document).ready(function() {
+    jQuery.get('part1_2.js', function(theText) {
+        alert(theText);
+    });
+});
+}
+
+function myFunction3(){
+$(document).ready(function() {
+  jQuery.get('part1_3.js', function(theText) {
+      alert(theText);
+  });
+});
+}
+  </script>
+
+  </body>
+</html>
